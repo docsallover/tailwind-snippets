@@ -68,6 +68,10 @@ This snippet showcases a visually appealing timeline roadmap that helps users un
 This snippet showcases a visually appealing and user-friendly registration form that includes a background image and adapts to different screen sizes.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-registration-form-page-with-image-in-ta/
 
+## 18. Responsive Blog Grid with Tailwind CSS
+This snippet showcases a visually appealing and organized blog grid that features card-style blog posts, making it easy for users to browse and discover your content.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-blog-grid-with-tailwind-css/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
