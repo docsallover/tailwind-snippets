@@ -72,6 +72,10 @@ This snippet showcases a visually appealing and user-friendly registration form 
 This snippet showcases a visually appealing and organized blog grid that features card-style blog posts, making it easy for users to browse and discover your content.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-blog-grid-with-tailwind-css/
 
+## 19. Hover Effect Card Component in Tailwind
+This snippet showcases a visually engaging card component that features customizable hover effects to highlight key information and provide a more interactive experience.
+  - live Preview: https://docsallover.com/snippets/tailwind/hover-effect-card-component-in-tailwind/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
