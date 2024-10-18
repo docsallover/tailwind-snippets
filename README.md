@@ -76,6 +76,10 @@ This snippet showcases a visually appealing and organized blog grid that feature
 This snippet showcases a visually engaging card component that features customizable hover effects to highlight key information and provide a more interactive experience.
   - live Preview: https://docsallover.com/snippets/tailwind/hover-effect-card-component-in-tailwind/
 
+## 20. Dark Mode Features Section in Tailwind
+This snippet showcases a modern and customizable features section that offers a dark mode option, providing a visually pleasing experience for users who prefer darker themes.
+  - live Preview: https://docsallover.com/snippets/tailwind/dark-mode-features-section-in-tailwind/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
