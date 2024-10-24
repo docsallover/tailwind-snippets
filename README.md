@@ -80,6 +80,18 @@ This snippet showcases a visually engaging card component that features customiz
 This snippet showcases a modern and customizable features section that offers a dark mode option, providing a visually pleasing experience for users who prefer darker themes.
   - live Preview: https://docsallover.com/snippets/tailwind/dark-mode-features-section-in-tailwind/
 
+## 21. Feature Section with Icons and Descriptions in Tailwind 
+This snippet showcases a visually appealing and informative features section that effectively highlights key benefits using icons and descriptive text.
+  - live Preview: https://docsallover.com/snippets/tailwind/feature-section-with-icons-and-descriptions/
+
+## 22. Forgot Password Form in Tailwind CSS 
+This snippet showcases a user-friendly and customizable forgot password form that allows users to recover their login credentials.
+  - live Preview: https://docsallover.com/snippets/tailwind/forgot-password-form-in-tailwind-css/
+
+## 23. Responsive Order Summary Page with Tailwind CSS 
+This snippet showcases a clear and informative order summary page that provides a detailed breakdown of the order, including items, quantities, prices, and shipping information.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-order-summary-page-with-tailwind-css/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
