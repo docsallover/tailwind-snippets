@@ -92,6 +92,22 @@ This snippet showcases a user-friendly and customizable forgot password form tha
 This snippet showcases a clear and informative order summary page that provides a detailed breakdown of the order, including items, quantities, prices, and shipping information.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-order-summary-page-with-tailwind-css/
 
+## 24. Responsive Tailwind CSS Coupon Code Form: 
+This snippet showcases a user-friendly and responsive coupon code form that allows users to easily apply discounts to their purchases.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-coupon-code-form/
+
+## 25. Responsive Process Step Grid Example in Tailwind CSS: 
+This snippet showcases a visually appealing and informative process step grid that guides users through a series of steps, making it easy to understand and follow.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-process-step-grid-example-in-tailwind/
+
+## 26. Responsive Feature Highlight Component with Tailwind CSS: 
+This snippet showcases a versatile and customizable feature highlight component that can be used to effectively communicate key product benefits.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-feature-highlight-component-tailwind/
+
+## 27. Responsive Video Card Component for Tailwind CSS: 
+This snippet showcases a visually appealing and interactive video card that provides a seamless viewing experience for users.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-video-card-component-for-tailwind-css/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
