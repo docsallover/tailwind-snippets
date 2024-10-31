@@ -108,6 +108,14 @@ This snippet showcases a versatile and customizable feature highlight component 
 This snippet showcases a visually appealing and interactive video card that provides a seamless viewing experience for users.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-video-card-component-for-tailwind-css/
 
+## 28. Responsive Registration Form with Image in Tailwind CSS
+This snippet showcases a visually appealing and user-friendly registration form that incorporates a background image to enhance the user experience and streamline the registration process.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-registration-form-in-tailwind-css/
+
+## 29. Stylish Contact Form with Image in Tailwind CSS
+This snippet showcases a modern and visually appealing contact form that encourages user engagement and provides a seamless way for visitors to get in touch.
+  - live Preview: https://docsallover.com/snippets/tailwind/stylish-contact-form-with-image-in-tailwind/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
