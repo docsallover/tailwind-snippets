@@ -116,6 +116,9 @@ This snippet showcases a visually appealing and user-friendly registration form 
 This snippet showcases a modern and visually appealing contact form that encourages user engagement and provides a seamless way for visitors to get in touch.
   - live Preview: https://docsallover.com/snippets/tailwind/stylish-contact-form-with-image-in-tailwind/
 
+## 30. Responsive Tailwind CSS Testimonial Slider with Alpine.js Functionality
+This snippet showcases a smooth and responsive testimonial slider, providing an elegant way to display customer reviews and build trust.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-testimonial-slider/
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
