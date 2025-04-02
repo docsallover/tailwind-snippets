@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Tailwind CSS Testimonial Slider with Alpine.js Functionality</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="w-full mx-auto max-w-3xl flex flex-col justify-center relative p-8">
+                <div class="prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl text-center">
+                    <div>
+                        <h1>Testimonials</h1>
+                        <p class="text-balance">What our customers say.</p>
+                    </div>
+                </div>
+                <div class="mt-8 border-t pt-12">
+                    <div class="flex flex-col w-full" x-data="{
+                        skip: 1,
+                        atBeginning: false,
+                        atEnd: false,
+                        next() {
+                            this.to((current, offset) => current + (offset * this.skip))
+                        },
+                        prev() {
+                            this.to((current, offset) => current - (offset * this.skip))
+                        },
+                        to(strategy) {
+                            let slider = this.$refs.slider
+                            let current = slider.scrollLeft
+                            let offset = slider.firstElementChild.getBoundingClientRect().width
+                            slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
+                        },
+                        focusableWhenVisible: {
+                            'x-intersect:enter'() {
+                                this.$el.removeAttribute('tabindex')
+                            },
+                            'x-intersect:leave'() {
+                                this.$el.setAttribute('tabindex', '-1')
+                            },
+                        },
+                        disableNextAndPreviousButtons: {
+                            'x-intersect:enter.threshold.05'() {
+                                let slideEls = this.$el.parentElement.children
+                                // If this is the first slide.
+                                if (slideEls[0] === this.$el) {
+                                    this.atBeginning = true
+                                // If this is the last slide.
+                                } else if (slideEls[slideEls.length-1] === this.$el) {
+                                    this.atEnd = true
+                                }
+                            },
+                            'x-intersect:leave.threshold.05'() {
+                                let slideEls = this.$el.parentElement.children
+                                // If this is the first slide.
+                                if (slideEls[0] === this.$el) {
+                                    this.atBeginning = false
+                                // If this is the last slide.
+                                } else if (slideEls[slideEls.length-1] === this.$el) {
+                                    this.atEnd = false
+                                }
+                            },
+                        },
+                    }">
+                        <div class="flex flex-col w-full items-center" aria-labelledby="carousel-label" role="region" tabindex="0" x-on:keydown.left="prev" x-on:keydown.right="next">
+                            <h2 class="sr-only" hidden="" id="carousel-label">
+                                Testimonials
+                            </h2>
+                            <span class="sr-only" hidden="" id="carousel-content-label">Testimonial Content</span>
+                            <div class="flex items-center space-x-2 mt-4">
+                                <button class="bg-blue-500 hover:bg-blue-600 size-8 flex focus:bg-blue-400 rounded-full items-center text-white opacity-50" :class="{ 'opacity-50 ': atBeginning }" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0" x-on:click="prev" tabindex="0" aria-disabled="true">
+                                    <span aria-hidden="true" class="mx-auto">←</span>
+                                    <span class="sr-only">Previous slide</span>
+                                </button>
+                                <button class="bg-blue-500 hover:bg-blue-600 size-8 flex focus:bg-blue-400 rounded-full items-center text-white" :class="{ 'opacity-50 ': atEnd }" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0" x-on:click="next" tabindex="0">
+                                    <span aria-hidden="true" class="mx-auto">→</span>
+                                    <span class="sr-only">Next slide</span>
+                                </button>
+                            </div>
+                            <ul class="flex gap-4 overflow-x-scroll mt-8 scrollbar-hide snap-mandatory snap-x w-full rounded-2xl" role="listbox" aria-labelledby="carousel-content-label" tabindex="0" x-ref="slider">
+                                <li class="items-center justify-center w-full flex flex-col shrink-0 snap-start h-full p-8 rounded-2xl bg-white shadow-md" role="option" x-bind="disableNextAndPreviousButtons">
+                                    <figure>
+                                        <div class="max-w-2xl">
+                                            <div class="flex flex-col gap-6">
+                                                <p class="text-base text-gray-900 font-display text-balance">
+                                                    "I've been using this services for years, and they consistently exceed my expectations. The support team is fantastic!"
+                                                </p>
+                                                <div class="flex items-center">
+                                                    <div>
+                                                        <img class="inline-block h-10 w-10 rounded-full object-cover object-center" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&amp;w=2960&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="text-sm font-medium text-gray-700">Pepe Madrid</p>
+                                                        <p class="text-xs font-medium text-gray-500">CEO of Something INC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items-center justify-center w-full flex flex-col shrink-0 snap-start h-full p-8 rounded-2xl bg-white shadow-md" role="option" x-bind="disableNextAndPreviousButtons">
+                                    <figure>
+                                        <div class="max-w-2xl">
+                                            <div class="flex flex-col gap-6">
+                                                <p class="text-base text-gray-900 font-display text-balance">
+                                                    "The financial solutions they offer are top-notch. I've seen significant growth in my investments since I started using their platform."
+                                                </p>
+                                                <div class="flex items-center">
+                                                    <div>
+                                                        <img class="inline-block h-10 w-10 rounded-full object-cover object-center" src="https://alfred.lexingtonthemes.com/avatar1.png" alt="">
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="text-sm font-medium text-gray-700">Michael Andreuzza</p>
+                                                        <p class="text-xs font-medium text-gray-500">CEO of Something INC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items-center justify-center w-full flex flex-col shrink-0 snap-start h-full p-8 rounded-2xl bg-white shadow-md" role="option" x-bind="disableNextAndPreviousButtons">
+                                    <figure>
+                                        <div class="max-w-2xl">
+                                            <div class="flex flex-col gap-6">
+                                                <p class="text-base text-gray-900 font-display text-balance">
+                                                    "Their customer service is unparalleled. They really go the extra mile to ensure customer satisfaction."
+                                                </p>
+                                                <div class="flex items-center">
+                                                    <div>
+                                                        <img class="inline-block h-10 w-10 rounded-full object-cover object-center" src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="text-sm font-medium text-gray-700">Fernando Pio</p>
+                                                        <p class="text-xs font-medium text-gray-500">CEO of Something INC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</html>
