@@ -120,6 +120,10 @@ This snippet showcases a modern and visually appealing contact form that encoura
 This snippet showcases a smooth and responsive testimonial slider, providing an elegant way to display customer reviews and build trust.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-testimonial-slider/
 
+## 31. Responsive TailwindCSS Footer with Gallery Section
+This snippet showcases a responsive and visually engaging footer, elegantly integrating an image gallery to enhance user experience.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwindcss-footer-with-gallery-section/
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
