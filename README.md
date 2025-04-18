@@ -124,7 +124,7 @@ This snippet showcases a smooth and responsive testimonial slider, providing an 
 This snippet showcases a responsive and visually engaging footer, elegantly integrating an image gallery to enhance user experience.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwindcss-footer-with-gallery-section/
 
-## 31. Responsive Tailwind CSS Stepper Component
+## 32. Responsive Tailwind CSS Stepper Component
 This snippet showcases a modern and adaptable stepper component, providing a user-friendly way to visualize progress through sequential tasks with Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-stepper-component/
 
