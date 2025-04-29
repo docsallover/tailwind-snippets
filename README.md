@@ -128,6 +128,10 @@ This snippet showcases a responsive and visually engaging footer, elegantly inte
 This snippet showcases a modern and adaptable stepper component, providing a user-friendly way to visualize progress through sequential tasks with Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-stepper-component/
 
+## 33. Clean Tailwind CSS Footer Design with Call to Action
+This snippet showcases a minimal and adaptable footer component, offering a user-friendly way to present key website details and encourage specific actions with Tailwind CSS.
+  - live Preview: https://docsallover.com/snippets/tailwind/clean-tailwind-css-footer-design-with-cta/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
