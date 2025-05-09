@@ -1,4 +1,13 @@
-# Reusable Tailwind Code Snippets for Web Development
+![docsallover-snippets](https://github.com/user-attachments/assets/08b9a424-9347-4cbe-b736-b340764e2124)
+
+<p align="center">
+  <a href="https://docsallover.com/">
+    <img src="https://docsallover.com/static/images/logo-landscape.png" alt="DocsAllOver Logo" width="500">
+  </a>
+</p>
+
+<h1 align="center">Reusable TailwindCSS Code Snippets for Web Development</h1>
+
 
 ## 1. Responsive Features Section with Tailwind CSS
 This snippet showcases a flexible and visually appealing features section that adapts seamlessly to different screen sizes, allowing you to highlight your product's key benefits in a clear and engaging manner.
