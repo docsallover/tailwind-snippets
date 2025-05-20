@@ -141,6 +141,10 @@ This snippet showcases a modern and adaptable stepper component, providing a use
 This snippet showcases a minimal and adaptable footer component, offering a user-friendly way to present key website details and encourage specific actions with Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/clean-tailwind-css-footer-design-with-cta/
 
+## 34. Responsive Tailwind CSS Hero Section with Fancy Heading
+This snippet showcases a modern and captivating hero section, providing an impactful way to present your primary message with a stylish, responsive heading using Tailwind CSS.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-hero-section-with-heading/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
