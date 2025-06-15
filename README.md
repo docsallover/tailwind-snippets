@@ -145,6 +145,11 @@ This snippet showcases a minimal and adaptable footer component, offering a user
 This snippet showcases a modern and captivating hero section, providing an impactful way to present your primary message with a stylish, responsive heading using Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-hero-section-with-heading/
 
+## 35. Modern Tailwind CSS Hero Section with Promo and Dual Buttons
+This snippet showcases a modern and captivating hero section, providing an impactful way to present your primary message with a compelling promotion and dual responsive calls to action using Tailwind CSS.
+  - live Preview: https://docsallover.com/snippets/tailwind/modern-tailwind-css-hero-section-with-promo/
+
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
