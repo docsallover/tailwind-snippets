@@ -149,6 +149,10 @@ This snippet showcases a modern and captivating hero section, providing an impac
 This snippet showcases a modern and captivating hero section, providing an impactful way to present your primary message with a compelling promotion and dual responsive calls to action using Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/modern-tailwind-css-hero-section-with-promo/
 
+## 36. Tailwind CSS Subscription Section for Services & Plans
+This snippet showcases a clean and effective subscription section, providing a clear and engaging way to present your services and plans with responsive pricing tiers using Tailwind CSS.
+  - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-subscription-section-for-services/
+
 
 
 ## License
