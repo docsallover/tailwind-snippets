@@ -153,6 +153,9 @@ This snippet showcases a modern and captivating hero section, providing an impac
 This snippet showcases a clean and effective subscription section, providing a clear and engaging way to present your services and plans with responsive pricing tiers using Tailwind CSS.
   - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-subscription-section-for-services/
 
+## 37. Tailwind CSS Hero Section with Dual CTA Buttons and Prominent Image
+This Tailwind CSS snippet showcases a modern and impactful hero section designed to capture immediate attention with a prominent illustration, a compelling headline, and dual call-to-action buttons, providing a visually striking and engaging introduction for your website visitors
+  - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-hero-section-with-dual-cta-buttons/
 
 
 ## License
