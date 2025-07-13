@@ -157,6 +157,10 @@ This snippet showcases a clean and effective subscription section, providing a c
 This Tailwind CSS snippet showcases a modern and impactful hero section designed to capture immediate attention with a prominent illustration, a compelling headline, and dual call-to-action buttons, providing a visually striking and engaging introduction for your website visitors
   - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-hero-section-with-dual-cta-buttons/
 
+## 38. Responsive Tailwind CSS SaaS Hero with Theme Switcher
+This Tailwind CSS snippet showcases a modern and impactful SaaS hero section designed to capture immediate attention with a compelling headline and a dynamic dark and light mode theme switcher, providing an adaptable and user-centric introduction for your application visitors.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwindcss-saas-hero-with-theme-switch/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.

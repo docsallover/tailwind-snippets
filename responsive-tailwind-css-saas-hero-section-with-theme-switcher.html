@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind CSS Hero Section with Fancy Heading</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                        manrope: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;0,600;0,700;0,800;0,900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .animate-fade {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dropdown-active-rotate-180 {
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown-active-rotate-180.rotate-180 {
+            transform: rotate(180deg);
+        }
+
+        .theme-toggle-button {
+            @apply p-2 rounded-full transition-colors duration-300 flex items-center justify-center space-x-2;
+            min-width: 100px;
+        }
+
+        body:not(.dark) .theme-toggle-button {
+            @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+        }
+
+        body.dark .theme-toggle-button {
+            @apply bg-indigo-500 text-white hover:bg-indigo-600;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 transition-colors duration-500">
+
+    <nav class="py-2 border-b border-solid border-gray-200 z-10 w-full bg-white relative lg:fixed
+                dark:bg-gray-800 dark:border-gray-700" id="topnav">
+        <div class="mx-auto max-w-7xl lg:px-8">
+            <div class="w-full flex flex-col lg:flex-row">
+                <div class="flex justify-between lg:hidden px-4 w-full items-center">
+                    <img id="mobileLogo"
+                        src="https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-logo.png"
+                        width="120" height="60" alt="Company Logo" class="h-auto">
+                    <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
+                                dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="bx bx-menu text-2xl"></i>
+                    </button>
+                </div>
+
+                <div class="hidden w-full lg:flex justify-between max-lg:bg-white py-3 max-lg:mt-1 max-lg:px-4 max-lg:shadow-lg max-lg:shadow-gray-200
+                            dark:max-lg:bg-gray-800 dark:max-lg:shadow-gray-700 max-lg:h-auto max-lg:overflow-auto transition-all duration-500 delay-200 "
+                    id="navbar">
+                    <ul
+                        class="flex lg:items-center max-lg:gap-2 max-lg:mb-4 flex-col mt-4 lg:flex-1 md:mt-0 lg:flex-row">
+                        <li>
+                            <a href="#" class="text-gray-500 text-sm font-medium hover:text-gray-900 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3
+                                dark:text-gray-300 dark:hover:text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-500 text-sm font-medium hover:text-gray-900 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3
+                                dark:text-gray-300 dark:hover:text-white">About
+                                us</a>
+                        </li>
+
+                        <li class="relative">
+                            <button data-target="megamenu" class="dropdown-toggle flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-gray-900 transition-all duration-500 mb-2 lg:mr-6 lg:mb-0 mr-auto lg:text-left lg:m-0
+                                dark:text-gray-300 dark:hover:text-white">
+                                Products
+                                <i class="bx bx-chevron-down ml-1.5 text-lg dropdown-active-rotate-180"></i>
+                            </button>
+                            <div id="megamenu" aria-labelledby="megamenu" class="animate-fade z-10 relative lg:absolute top-2 lg:top-14 lg:-left-20 bg-white rounded-lg shadow-[0px_15px_30px_0px_rgba(16,24,40,0.1)] xl:p-8 lg:p-4 p-2 lg:min-w-[800px] md:min-w-[500px] min-w-full hidden
+                                dark:bg-gray-700 dark:shadow-none">
+                                <div class="flex flex-col sm:flex-row lg:justify-between">
+                                    <ul class="text-sm text-gray-700 lg:w-1/2">
+                                        <h6 class="font-medium text-sm text-gray-500 mb-2 dark:text-gray-400">
+                                            Features
+                                        </h6>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 transition-all duration-500 hover:bg-gray-50 hover:rounded-xl flex items-center dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-orange-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-bell text-orange-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Notification
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        Real time notification always keep you up to date
+                                                        in realtime
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 hover:bg-gray-50 hover:rounded-xl flex items-center transition-all duration-500 dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-emerald-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-line-chart text-emerald-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Analytics
+                                                        <span
+                                                            class="bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-1 rounded-full h-5 ml-4">New</span>
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        Analyze data to make more informed and accurate
+                                                        business decision
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 hover:bg-gray-50 hover:rounded-xl flex items-center transition-all duration-500 dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-blue-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-plug text-blue-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Integrations
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        Get started by taking advantage of integration
+                                                        with other services
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="text-sm text-gray-700 dark:text-gray-400 lg:w-1/2"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <h6 class="font-medium text-sm text-gray-500 mb-2 dark:text-gray-400">
+                                            Services
+                                        </h6>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 hover:bg-gray-50 hover:rounded-xl flex items-center transition-all duration-500 dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-rose-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-shield-alt-2 text-rose-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Security
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        To ensure your privacy all information are highly
+                                                        encrypted
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 hover:bg-gray-50 hover:rounded-xl flex items-center transition-all duration-500 dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-indigo-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-book-open text-indigo-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Documentation
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        Organized documentation will help you save tone of
+                                                        your time
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="px-2 lg:px-3 py-2 lg:py-5 hover:bg-gray-50 hover:rounded-xl flex items-center transition-all duration-500 dark:hover:bg-gray-600">
+                                                <div
+                                                    class="bg-cyan-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                    <i class="bx bx-help-circle text-cyan-500 text-2xl"></i>
+                                                </div>
+                                                <div class="ml-4 w-4/5">
+                                                    <h5
+                                                        class="text-gray-900 text-base mb-1.5 font-semibold dark:text-white">
+                                                        Support
+                                                    </h5>
+                                                    <p class="text-xs font-medium text-gray-400">
+                                                        Need help? our customer support is here to help
+                                                        you anytime
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <div class="dropdown relative inline-flex">
+                                <button type="button" data-target="dropdown-feature" class="dropdown-toggle flex items-center justify-between text-gray-500 text-sm max-lg:h-max text-center lg:text-base font-medium hover:text-gray-900 transition-all duration-500 mb-2 lg:mr-6 lg:mb-0 mr-auto lg:text-left lg:m-0
+                                dark:text-gray-300 dark:hover:text-white">
+                                    Features
+                                    <i class="bx bx-chevron-down ml-1.5 text-lg dropdown-active-rotate-180"></i>
+                                </button>
+                                <div id="dropdown-feature" class="dropdown-menu rounded-xl shadow-lg lg:bg-white relative lg:absolute max-lg:-left-14 max-lg:top-2 max-lg:bg-white lg:top-full lg:w-72 mt-2 hidden
+                                dark:bg-gray-700 dark:shadow-none">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium dark:text-gray-200 dark:hover:bg-gray-600"
+                                                href="#">
+                                                Downloads
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium dark:text-gray-200 dark:hover:bg-gray-600"
+                                                href="#">
+                                                Saved Files
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium dark:text-gray-200 dark:hover:bg-gray-600"
+                                                href="#">
+                                                Notifications
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <img id="desktopLogo"
+                        src="https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-logo.png"
+                        width="200" height="100" alt="Company Logo" class="hidden lg:block h-auto">
+
+                    <div
+                        class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:flex-1 lg:justify-end">
+                        <button id="themeToggleButton" class="theme-toggle-button">
+                        </button>
+                        <button class="bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm hover:bg-indigo-100
+                            dark:bg-indigo-700 dark:text-white dark:hover:bg-indigo-800">
+                            Login
+                        </button>
+                        <button class="bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm lg:ml-5 hover:bg-indigo-700
+                            dark:bg-indigo-500 dark:hover:bg-indigo-600">
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+
+    <section class="pt-8 lg:pt-32 bg-[url('bg.png')] bg-center bg-cover">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
+            <div
+                class="border border-indigo-600 p-1 w-60 mx-auto rounded-full flex items-center justify-between mb-4 dark:border-indigo-400">
+                <span class="font-poppins text-xs font-medium text-gray-900 ml-3 dark:text-gray-200">Explore how to use
+                    for brands.</span>
+                <a href="#"
+                    class="w-8 h-8 rounded-full flex justify-center items-center bg-indigo-600 dark:bg-indigo-500">
+                    <i class="bx bx-right-arrow-alt text-white text-lg"></i>
+                </a>
+            </div>
+            <h1
+                class="max-w-2xl mx-auto text-center font-poppins font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px] dark:text-white">
+                Manage your System with our
+                <span class="text-indigo-600 dark:text-indigo-400">Smart Dashboard </span>
+            </h1>
+            <p
+                class="max-w-sm mx-auto text-center text-base font-poppins font-normal leading-7 text-gray-500 mb-9 dark:text-gray-300">
+                Gain insights and control over your data with our intuitive dashboard system.
+            </p>
+            <a href="#" class="w-full md:w-auto mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-center text-white rounded-full bg-indigo-600 shadow-xs hover:bg-indigo-700 transition-all duration-500
+                dark:bg-indigo-500 dark:hover:bg-indigo-600">
+                Create an account
+                <i class="bx bx-right-arrow-alt ml-2 text-lg"></i>
+            </a>
+            <div class="flex justify-center">
+                <img id="dashboardImage"
+                    src="https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-dashboard.png"
+                    alt="Dashboard image" class="rounded-t-3xl h-auto object-cover" />
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggle = document.querySelector('[data-collapse-toggle="navbar"]');
+            const navbar = document.getElementById('navbar');
+
+            if (navbarToggle && navbar) {
+                navbarToggle.addEventListener('click', function () {
+                    navbar.classList.toggle('hidden');
+                    navbar.classList.toggle('flex');
+                    this.setAttribute('aria-expanded', navbar.classList.contains('flex'));
+                });
+            }
+
+            document.querySelectorAll('.dropdown-toggle').forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetId = this.dataset.target;
+                    const targetMenu = document.getElementById(targetId);
+                    const arrowIcon = this.querySelector('.dropdown-active-rotate-180');
+
+                    if (targetMenu) {
+                        document.querySelectorAll('.dropdown-menu, #megamenu').forEach(menu => {
+                            if (menu.id !== targetId && !menu.classList.contains('hidden')) {
+                                menu.classList.add('hidden');
+                                const otherButton = document.querySelector(`[data-target="${menu.id}"] .dropdown-active-rotate-180`);
+                                if (otherButton) {
+                                    otherButton.classList.remove('rotate-180');
+                                }
+                            }
+                        });
+
+                        targetMenu.classList.toggle('hidden');
+                        arrowIcon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!event.target.closest('.dropdown-toggle') &&
+                    !event.target.closest('.dropdown-menu') &&
+                    !event.target.closest('#megamenu') &&
+                    !event.target.closest('#themeToggleButton')) {
+                    document.querySelectorAll('.dropdown-menu, #megamenu').forEach(menu => {
+                        menu.classList.add('hidden');
+                    });
+                    document.querySelectorAll('.dropdown-active-rotate-180').forEach(icon => {
+                        icon.classList.remove('rotate-180');
+                    });
+                }
+            });
+
+            const themeToggleButton = document.getElementById('themeToggleButton');
+            const htmlElement = document.documentElement;
+            const mobileLogo = document.getElementById('mobileLogo');
+            const desktopLogo = document.getElementById('desktopLogo');
+            const dashboardImage = document.getElementById('dashboardImage');
+
+            const sunIconClass = 'bx bx-sun';
+            const moonIconClass = 'bx bx-moon';
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    htmlElement.classList.add('dark');
+                    document.body.classList.add('dark:bg-gray-900', 'dark:text-gray-50');
+                    localStorage.setItem('theme', 'dark');
+                    themeToggleButton.innerHTML = `<i class="${moonIconClass} text-base"></i><span>&nbsp;Light</span>`;
+                    if (mobileLogo) mobileLogo.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/white-logo.png';
+                    if (desktopLogo) desktopLogo.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/white-logo.png';
+                    if (dashboardImage) dashboardImage.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/dark-dashboard.png';
+                } else {
+                    htmlElement.classList.remove('dark');
+                    document.body.classList.remove('dark:bg-gray-900', 'dark:text-gray-50');
+                    localStorage.setItem('theme', 'light');
+                    themeToggleButton.innerHTML = `<i class="${sunIconClass} text-base"></i><span>&nbsp;Dark</span>`;
+                    if (mobileLogo) mobileLogo.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-logo.png';
+                    if (desktopLogo) desktopLogo.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-logo.png';
+                    if (dashboardImage) dashboardImage.src = 'https://docsallover.com/docsallover/media/snippet/internal_images/snippet101/color-dashboard.png';
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            themeToggleButton.addEventListener('click', function () {
+                const isDark = htmlElement.classList.contains('dark');
+                setTheme(!isDark);
+            });
+        });
+    </script>
+</body>
+
+</html>
