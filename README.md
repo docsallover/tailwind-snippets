@@ -161,6 +161,11 @@ This Tailwind CSS snippet showcases a modern and impactful hero section designed
 This Tailwind CSS snippet showcases a modern and impactful SaaS hero section designed to capture immediate attention with a compelling headline and a dynamic dark and light mode theme switcher, providing an adaptable and user-centric introduction for your application visitors.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwindcss-saas-hero-with-theme-switch/
 
+## 39. Tailwind CSS CTA Block with Engaging User Avatars
+This Tailwind CSS snippet showcases a modern and impactful CTA block designed to drive conversions with a compelling call-to-action and engaging user avatars, providing a trust-building and visually appealing prompt for user interaction.
+  - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-cta-block-with-engaging-user-avatars/
+
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
