@@ -165,6 +165,9 @@ This Tailwind CSS snippet showcases a modern and impactful SaaS hero section des
 This Tailwind CSS snippet showcases a modern and impactful CTA block designed to drive conversions with a compelling call-to-action and engaging user avatars, providing a trust-building and visually appealing prompt for user interaction.
   - live Preview: https://docsallover.com/snippets/tailwind/tailwind-css-cta-block-with-engaging-user-avatars/
 
+## 40. Developer-Focused Tailwind Hero with Live Sample Code Block"
+This Tailwind CSS snippet showcases a modern and impactful hero section designed to engage a technical audience with a prominent live sample code block, providing a practical and visually compelling introduction to your product or service.
+  - live Preview: https://docsallover.com/snippets/tailwind/developer-focused-tailwind-hero-with-sample-code/
 
 
 ## License
