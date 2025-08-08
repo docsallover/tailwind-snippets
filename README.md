@@ -169,6 +169,10 @@ This Tailwind CSS snippet showcases a modern and impactful CTA block designed to
 This Tailwind CSS snippet showcases a modern and impactful hero section designed to engage a technical audience with a prominent live sample code block, providing a practical and visually compelling introduction to your product or service.
   - live Preview: https://docsallover.com/snippets/tailwind/developer-focused-tailwind-hero-with-sample-code/
 
+## 41. Responsive Tailwind CSS Team Members Display Showcase
+This Tailwind CSS snippet showcases a modern and impactful team members display, providing a clear and professional way to introduce your team with a responsive and visually appealing profile showcase.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-team-members-display/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
