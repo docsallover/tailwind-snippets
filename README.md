@@ -173,6 +173,10 @@ This Tailwind CSS snippet showcases a modern and impactful hero section designed
 This Tailwind CSS snippet showcases a modern and impactful team members display, providing a clear and professional way to introduce your team with a responsive and visually appealing profile showcase.
   - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-team-members-display/
 
+## 42. Responsive Tailwind CSS Hero Section and Adaptive Navbar
+This Tailwind CSS snippet showcases a modern and impactful hero section, providing a clear and visually appealing way to introduce your site with a compelling headline and an adaptive navigation bar.
+  - live Preview: https://docsallover.com/snippets/tailwind/responsive-tailwind-css-hero-section-and-navbar/
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
